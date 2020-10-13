@@ -1,0 +1,16 @@
+Objective:
+The goal in Go Fish is to win the most "books" of cards. A book of cards is any four of
+a kind, such as 4 of Kings, 4 of Eights, etc.
+
+How to Play:
+The game starts off by dealing the cards. If there are 2 or 3 players in the game, each player gets
+7 cards. If there are 4 or 5 players in the game, each player gets 5 cards. The game proceeds in a
+cyclical fashion. When it is your turn, you either ask the player next to you for a card
+(e.g. Ace of Spades) or draw a card, if you have none. If the  player you asked for a card has the
+card you asked for, they hand it over to you, and you get to play your turn again. If the player
+doesn't have the card you asked for, they say "Go Fish" and you draw a card from the deck. The play
+then proceeds to the next player. If it's your turn and you don't have any cards to play, you draw
+a card from the top of the deck. You may ask for a card of that rank, and then the play proceeds to
+the next player. If there are no cards left, you are out of the game. Each time a player gets a
+four of a kind, it is revealed to the other players. The game ends when all thirteen books have
+been won. The player with the most books at the end of the game wins.
