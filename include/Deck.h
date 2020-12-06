@@ -21,7 +21,6 @@ class Deck {
  public:
   /**
   * Constructor for a Deck object
-  * @return an instantiation of a deck object
   */
   Deck();
 
@@ -50,7 +49,7 @@ class Deck {
 
   /**
   * getSize
-  * @return size_t size of the deck
+  * @return size of the deck
   */
   size_t getSize() const;
 

@@ -32,7 +32,6 @@ class Card {
   * Constructor for a Card object
   * @param r rank
   * @param s suit
-  * @return an instantiation of a card object
   */
   Card(Rank r = Ace, Suit s = Spades) : cardRank(r), cardSuit(s) {}
 
@@ -68,14 +67,14 @@ class Card {
   /**
   * converts enum Rank to string equivalent
   * @param r the cards rank
-  * @return std::string the string value of rank
+  * @return the string value of rank
   */
   std::string rankToString(const Rank& r);
 
   /**
   * converts enum Suit to string equivalent
   * @param s the cards suit
-  * @return std::string the string value of suit
+  * @return the string value of suit
   */
   std::string suitToString(const Suit& s);
 

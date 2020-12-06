@@ -67,13 +67,13 @@ class GoFishController {
   * See if a player's hand contains Card
   * @param c the card to check for
   * @param idx the player you are asking for card from
-  * @return bool true if there's a match
+  * @return true if there's a match
   */
   bool findMatch(const Card& c, unsigned int idx);
 
   /**
   * Determine if game is over
-  * @return bool true if game is over
+  * @return true if game is over
   */
   bool endGame();
 
@@ -85,7 +85,7 @@ class GoFishController {
   /**
   * Getter for number of players in game. Needed since Constructor
   * doesn't include players and this is left to the menu.
-  * @return size_t the number of players
+  * @return the number of players
   */
   size_t numPlayers() const;
 

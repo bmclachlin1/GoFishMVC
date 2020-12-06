@@ -81,7 +81,13 @@ unsigned int GoFishView::pickPlayerToAsk(unsigned int numPlayers) {
     << std::endl;
     std::cout << ">> ";
     std::cin >> choice;
-  } while (choice < 1 || choice >= numPlayers);
+    std::cin.clear();
+    std::cin.ignore();
+    if (!std::cin || choice < 1 || choice >= numPlayers) {
+      std::cout << "That was not a valid option. Please try again." <<
+      std::endl;
+    }
+  } while (!std::cin || choice < 1 || choice >= numPlayers);
 
   return choice;
 }
@@ -94,7 +100,13 @@ Card GoFishView::pickCard(Player* p) {
     << std::endl;
     std::cout << ">> ";
     std::cin >> pick;
-  } while (pick < 0 || pick >= p->getSize());
+    std::cin.clear();
+    std::cin.ignore();
+    if (!std::cin || pick < 0 || pick >= p->getSize()) {
+      std::cout << "That was not a valid option. Please try again." <<
+      std::endl;
+    }
+  } while (!std::cin || pick < 0 || pick >= p->getSize());
 
   return p->getCard(pick);
 }
@@ -122,6 +134,8 @@ void GoFishView::help() {
   std::string line;
 
   if (fileIn.is_open()) {
+    std::getline(fileIn, line);
+    std::cout << line << std::endl;
     while (!fileIn.eof()) {
       std::getline(fileIn, line);
       std::cout << line << std::endl;

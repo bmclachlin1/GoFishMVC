@@ -18,7 +18,6 @@ class Player {
   /**
   * Constructor for a player object
   * @param n name
-  * @return an instantiation of a player object
   */
   Player(const std::string& n) : name(n) { numBooks = 0; }
 
@@ -29,14 +28,14 @@ class Player {
 
   /**
   * Getter for player name
-  * @return string the player's name
+  * @return the player's name
   */
   std::string getName() const;
 
   /**
   * Get a card from player's hand
   * @param idx the index from which to grab the card from
-  * @return Card
+  * @return the Card at index idx
   */
   Card getCard(unsigned int idx) const;
 
@@ -48,7 +47,7 @@ class Player {
 
   /**
   * Get the number of books the player has
-  * @return unsigned int the number of books
+  * @return the number of books
   */
   unsigned int getBooks() const;
 
@@ -67,13 +66,13 @@ class Player {
   * Determine if player has four-of-a-kind.
   * If so, update numBooks
   * @param toCheck the card to check for 4-of-a-kind of
-  * @return bool true if 4-of-a-kind
+  * @return true if 4-of-a-kind
   */
   bool checkForBook(const Card& toCheck);
 
   /**
   * Get size of Player hand
-  * @return size_t size of Player hand
+  * @return size of Player hand
   */
   size_t getSize() const;
 

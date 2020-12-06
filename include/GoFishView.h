@@ -26,20 +26,20 @@ class GoFishView {
 
   /**
   * display game menu to player and get input from user
-  * @return int the user's choice
+  * @return the user's choice
   */
   int showMenu();
 
   /**
   * Used to ask how many players are wanted in game
-  * @return int the number of players
+  * @return the number of players
   */
   int howMany();
 
   /**
   * Asks user for their name and assigns names to CPU's
   * @param howMany the number of players
-  * @return std::vector<std::string> the player names
+  * @return the player names
   */
   std::vector<std::string> playerNames(int howMany);
 
@@ -47,7 +47,7 @@ class GoFishView {
   * Display player's and get player to pick which player to ask
   * for cards from
   * @param numPlayers the number of players
-  * @return unsigned int the player's pick
+  * @return the player's pick
   */
   unsigned int pickPlayerToAsk(unsigned int numPlayers);
 
@@ -80,7 +80,6 @@ class GoFishView {
   * @param msg the message to show
   */
   void simpleMessage(const std::string& msg);
-
 
   /**
   * displays an error message to the console
